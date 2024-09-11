@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ca30ad6802.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- -----------header----------- -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Foreign Dentist</p>
+            <h1>Hi, I'm <span>Abdulrahman</span><br>Mahdi From Sudan</h1>
+        </div>
+    </div>
+</div>
+
+<!-- -----------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a dedicated dental professional from Khartoum, Sudan, with extensive experience as a dentist and dental assistant. Recently relocated to the United States, I am eager to continue my career in the dental field. Fluent in Arabic and English, I bring a strong commitment to patient care and a passion for improving oral health. I am willing to work anywhere and thrive under pressure, demonstrating excellent problem-solving skills by ensuring tasks are completed even when equipment is lacking.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>X-rays</li>
+                        <li>Cleaning</li>
+                        <li>Periodontal maintenances</li>
+                        <li>Crowns</li>
+                        <li>Bridges</li>
+                        <li>Extractions</li>
+                        <li>Esthetic work</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <span>2023</span>
+                            <li>General Dentist for Al-Rayan Dental Clinic.</li>
+                            <li>Worked in a rural dental clinic with limited resources, providing comprehensive dental care.</li>
+                            <li>Managed and treated patients with extreme dental problems such as space infection, impacted wisdom teeth extraction, and severe Chronic necrotizing periodontitis (CNP).</li>
+                            <li>Adapted to resource constraints by innovating and utilizing available materials effectively.</li>
+                            <li>Educated patients on oral hygiene practices and preventive care in a resource-limited setting.</li>
+                            <li>Developed strong problem-solving skills to address unique challenges in a rural healthcare environment.</li>
+                        <span>2019 - 2023</span>
+                            <li>General Dentist at Al-Amal National Hospital.</li>
+                            <li>Saw an average of <b>20-30 patients</b> per day.</li>
+                            <li>Maintained a clean workstation complaint with best safety practices.</li>
+                            <li>Educate patients about treatment options and at-home care techniques.</li>
+                        <span>2017 - 2023</span>
+                            <li>General Dentist Manager for Shifa Dental Clinic.</li>
+                            <li>Saw an average of <b>5-10 patients</b> per day.</li>
+                            <li>Strong interpersonal and communication skills, fostering positive relationships with patients, staff, and colleagues.</li>
+                            <li>Dedicated to providing exceptional patient care and ensuring a positive experience.</li>
+                            <li>Able to maintain composure during emergencies and high-pressure situations.</li>
+                            <li>Detail-oriented with a focus on accuracy in managing schedules, billing, and records.</li>
+                            <li>Actively pursuing professional development to stay updated on industry trends and best practices.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <span>2015</span>
+                            <li>Bachelor of Dental Medicine and Surgery<em> (B DMS)</em></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------services----------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-tooth"></i>
+                <h2><b>Dental Procedures</b></h2>
+                <p>
+                    <b>Pacement and Removal of Dry Socket Medication</b>
+                    <br>
+                        Administering and removing medication to treat dry sockets, ensuring patient comfort and promoting healing.
+                    <br>
+                    <b>Placement of periodontal dressings</b>
+                    <br>
+                        Applying protective dressings to surgical sites to aid in healing and protect the area from infection.
+                    <br>
+                    <b>Placement of periodontal dressings</b>
+                    <br>
+                        Documenting the current state of a patient’s dental restorations and teeth, providing a baseline for future treatments.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-stethoscope"></i>
+                <h2><b>Diagnostic and Testing Services</b></h2>
+                <p>
+                    <b>Dental Procedures</b>
+                    <br>
+                    Assessing the health of the dental pulp to diagnose potential issues and determine the appropriate treatment.
+                    <br>
+                    <b>Glucose Testing</b>
+                    <br>
+                        Conducting blood glucose tests to monitor and manage patients’ blood sugar levels, particularly important for diabetic patients.
+                    <br>
+                    <b>Phlebotomy</b>
+                    <br>
+                        Performing venipuncture to draw blood for diagnostic testing, transfusions, or treatments.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-heart-circle-plus"></i>
+                <h2><b>Expanded Function Procedures</b></h2>
+                <p>
+                    <b>Expanded Function Procedures in Accordance with 650—Chapter 23</b>
+                    <br>
+                        Carrying out advanced dental procedures as permitted by regulatory guidelines enhancing the scope of dental care provided.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="class-list">
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <p></p>Root Canals, Crown, and Post & Core</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <p>Crown and Filling</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <p>Crown</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.jpg">
+                    <div class="layer">
+                        <p>Implant and Bridge</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-5.jpg">
+                    <div class="layer">
+                        <p>Root Canal, Crown, Crown Lengthening, and Post & Core</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-6.jpg">
+                    <div class="layer">
+                        <p>X-Ray</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abdulrahman-mahdi-335491288/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:abdumahdi21@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <a href="./images/Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" id="Your Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2" onclick="sendEmail()">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Abdulrahman.</p>
+    </div>
+</div>
+
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sideMenu = document.getElementById("sidemenu");
+
+    function openMenu(){
+        sideMenu.style.right = "0";
+    }
+
+    function closeMenu(){
+        sideMenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwNqIPUBLozxBCum0rjOezVZeTv76rS7HOA0EpPt-xXCs8tNJKsuyS3xlqyV_IR1H6DKg/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+        
+    })
+</script>
+
+</body>
+</html>
